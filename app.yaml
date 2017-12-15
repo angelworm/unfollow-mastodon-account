@@ -1,0 +1,20 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /.*
+  script: main.app
+
+libraries:
+- name: lxml
+  version: latest
+- name: ssl
+  version: latest
+
+skip_files:
+- logs/
