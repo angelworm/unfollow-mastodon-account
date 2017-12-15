@@ -11,8 +11,6 @@ handlers:
   script: main.app
 
 libraries:
-- name: lxml
-  version: latest
 - name: ssl
   version: latest
 
